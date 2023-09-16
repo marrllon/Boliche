@@ -1,0 +1,692 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    position: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("fondocosmic.png")no-repeat center center fixed ;
+    
+    background-size: 103%;
+    z-index: 1;
+    overflow-x: hidden;
+    width: 103%;
+    height: 60%;
+}
+/* Estilos para el menú */
+nav {
+    padding: 5px 0 5px 17px; /* Ajusta el padding en vertical y horizontal */
+    width: 100%;
+    font-size: 18px;
+    height: 60px;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 0; /* Ajusta el padding en vertical */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1002;
+}
+nav a{
+    margin-left: 50px;
+     }
+
+.logo {
+    max-width: 120px; /* Ajusta el tamaño máximo del logo */
+    transition: max-width 0.3s;
+    display: flex;
+    align-items: center;
+    margin-left: 87px;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+}
+
+li {
+    margin: 0 10px;
+    margin-right: 30px;
+   
+}
+
+a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+a:hover {
+    text-decoration: underline;
+    transform: translateY(1.3px);
+
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+
+/* Estilos para el encabezado */
+header {
+    position: relative;
+    overflow: hidden;
+    height: 120vh;
+    width: 100%;
+    left: 1px;
+    
+}
+
+.imagen-header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: -1;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Estilos para las redes sociales */
+
+
+.social-contact {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:/* #3f2817*/ #212529;
+    padding: 5px 10px;
+    width: 100%;
+    height: 135px;
+    
+}
+
+/* Estilos para la sección de contactos */
+/* Estilos para la sección de mensajes en columna */
+
+
+.left-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+margin-bottom: 10px;
+  margin-left: 80px;
+ 
+ }
+  /* Nueva regla para ajustar el margen inferior de los párrafos */
+  .left-message p {
+    margin-bottom: 0px;
+    margin-right: 100px;
+    margin-left: -16px;
+
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s;
+    margin-right: 140px;
+    margin-left: -20px;/*para ajustar la ditancia entre icono*/
+    margin-top: 10px;/*para el margen derecho del conjunto de los idolos */
+
+   
+ }
+.social-icons img {
+    max-width: 40px;
+}
+
+.social-icons a:hover img {
+    transform: translateY(4px);
+}
+
+
+
+
+
+/* Estilos para la sección de horarios y precios */
+.horarios-precios {
+    text-align: center;
+    padding: 100px 0;
+    margin-right: 39px;
+    color: yellow;
+    
+}
+
+.horarios-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imagen-container {
+    flex: 1;
+    text-align: center;
+    margin-right: -10px;
+}
+
+.imagen-container img {
+    max-width: 100%;
+    display: block;
+    margin: 0 74px;
+}
+
+.info-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-style: bold;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.horarios-precios h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de promociones */
+.promociones {
+    text-align: center;
+    padding: 20px 0;
+    color:yellow;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.column {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #484848;
+    border-radius: 5px;
+    transition: border-color 0.3s, opacity 0.3s;
+}
+
+.column:hover {
+    border-color: #fff;
+    opacity: 1;
+}
+
+.image-container {
+    position: relative;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.column p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+
+/*Estilos de ubicacion*/
+
+.ubicacion {
+    width: 450px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-style: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ margin-left: 427px;
+ padding: 15px;
+    }
+/*Estilos para el mapa*/
+.mapa{
+    width: 100%;
+	overflow: hidden;
+    margin-bottom: -20px;
+   
+            max-height: 600px; 
+}
+.mapa iframe {
+	width: 100%;
+	
+     }
+/* Estilos pie de pagina */
+/* Estilos para el footer */
+.footer {
+    background-color: #212529;
+    height: 130px;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-contact-foother {
+    display: flex;
+    align-items: center;
+}
+
+.left-message-foother {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 400px;
+}
+
+.left-message-foother p {
+    margin: 5px 0;
+}
+
+.social-icons-foother {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.left-message-foother p{
+    margin-left:10px; /* Ajusta el margen izquierdo de los párrafos */
+margin-right: 10px;
+}
+.social-icons-foother a {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s;
+    margin-right: 10px;
+}
+
+.social-icons-foother img {
+    max-width: 30px;
+}
+
+.social-icons-foother a:hover img {
+    transform: translateY(4px);
+}
+
+/* Media query para tabletas */
+@media screen and (max-width: 768px) {
+  
+    body {
+        font-family: Arial, sans-serif;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+        z-index: 1;
+        overflow-x: hidden;
+        width: 102%;
+        height: 100%;
+    z-index: 1;
+    }
+    
+    /* Estilos para la sección de contactos y redes sociales */
+    
+    
+    nav {
+        padding: 5px 0px ;
+     justify-content: center;
+     align-items: center;
+position: fixed;
+width: 100%;
+margin-right: 12px;
+    
+    
+    }
+   
+    .logo {
+        max-width: 67px; /* Ajuste de tamaño de logo en tabletas */
+        margin-left: 29px;
+        
+         }
+    
+    ul {
+        
+        display: flex; /* Muestra el menú en tabletas */
+        align-items: center; /* Centra verticalmente las opciones del menú */
+        justify-content: center; /* Centra horizontalmente las opciones del menú */
+
+    }
+    li{
+        margin: 3px 8px;
+ }
+
+
+  a{
+    font-size: 13px;
+    margin-right: 19px;
+    margin-left: 8px;
+  }
+
+ nav a {
+     /* Ajuste de margen izquierdo en tabletas */
+    margin-left: 4px;
+    margin-right: 4px;
+ }
+ /* Estilos para las redes sociales */
+
+
+.social-contact {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:/* #3f2817*/ #212529;
+    padding: 5px 10px;
+    width: 100%;
+    height: 135px;
+    
+}
+
+/* Estilos para la sección de contactos */
+/* Estilos para la sección de mensajes en columna */
+
+
+.left-message {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+margin-bottom: 10px;
+  margin-left: 50px;
+ 
+ }
+  /* Nueva regla para ajustar el margen inferior de los párrafos */
+  .left-message p {
+    margin-bottom: 0px;
+    margin-right: 100px;
+    margin-left: -25px;
+
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s;
+    margin-right: 120px;
+    margin-left: 0px;/*para ajustar la ditancia entre icono*/
+    margin-top: 10px;/*para el margen derecho del conjunto de los idolos */
+
+   
+ }
+.social-icons img {
+    max-width: 23px;
+    /*para ajustar la distancia entre los mensajes y los iconos asia el lado derecho*/
+    margin-left: 70px;
+    
+}
+
+.social-icons a:hover img {
+    transform: translateY(4px);
+}
+/* Estilos para las redes sociales */
+
+
+
+
+
+
+ .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+}
+  /* Ajusta la ubicación para dispositivos tablets */
+
+  .ubicacion {
+    max-width: 400%;
+    margin-left: 130px;
+    margin-top: 10px; /* Ajusta el margen superior */
+    margin-bottom: 10px; /* Ajusta el margen inferior */
+    
+ }
+
+  /* Ajusta el mapa para dispositivos móviles */
+  .mapa {
+    max-height: 600px; /* Ajusta la altura máxima */
+ }
+
+  /* Ajusta los elementos del footer y contacto para dispositivos móviles */
+  .left-message-foother {
+    height: auto;
+    margin-left: 5px;
+    margin-right: 60px;
+    align-items: center;
+    margin-top: 18px;
+  }
+
+  .social-icons-foother {
+    margin-left: 5px;
+  }
+  .social-icons-foother a {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s;
+    margin-right: 40px;
+}
+}
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 480px) {
+    body {
+        font-family: Arial, sans-serif;
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+        
+        background-size: cover;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+    z-index: -1;
+    }
+    
+    /* Estilos para la sección de contactos y redes sociales */
+    .social-contact {
+        position: static;
+        font-size: 11px;
+        height: auto;
+        width: 100%; /* Ancho completo en tabletas */
+        display: flex;
+        justify-content: space-between; /* Centra horizontalmente los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+        padding: 4px; /* Ajusta el espaciado interno */
+    }
+
+    .left-message {
+        font-size: 11px; /* Ajuste de tamaño de fuente en tabletas */
+        margin: 0; /* Elimina los márgenes para que se ajuste al ancho completo */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        margin-left: 29px;
+        margin-bottom: 4px;
+    }
+
+    .social-icons {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 4px; /* Ajuste el margen superior */
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-right: 20px;
+    }
+
+    .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        transition: transform 0.3s;
+        margin-right: 9px;
+        margin-left: -34px;
+        margin-bottom: 8px;
+        /* Ajuste el margen derecho entre los íconos */
+    }
+
+    .social-icons img {
+        max-width: 20px; /* Ajuste el tamaño máximo de los íconos */
+    
+    }
+ 
+    nav {
+        padding: 2px 0px;
+     justify-content: center;
+     align-items: center;
+font-size: 11px;
+position: fixed;
+width: 100%;
+margin-right: 6px;
+    
+    }
+
+    .logo {
+        max-width: 45px; /* Ajuste de tamaño de logo en tabletas */
+        margin-left: 17px;
+        margin-right: 4px;
+    }
+
+    ul {
+        
+        display: flex; /* Muestra el menú en tabletas */
+        align-items: center; /* Centra verticalmente las opciones del menú */
+       /* justify-content: center; /* Centra horizontalmente las opciones del menú */
+        display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+    
+    li{
+        margin: 0 2px;
+ }
+
+
+  a{
+    font-size: 10px;
+
+  }
+
+ nav a {
+     /* Ajuste de margen izquierdo en tabletas */
+    margin-left: 7px;
+ }
+
+ /*header*/
+ header {
+    position: relative;
+    overflow: hidden;
+    height: 120vh;
+    width: 100%;
+    left: 1px;
+    
+}
+
+.imagen-header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: -1;
+}
+ .promociones{
+    justify-content: space-between;
+    align-items: center;
+ }
+  /* Ajusta la ubicación para dispositivos móviles */
+  .ubicacion {
+    width: 100%;
+    margin-left: 7px;
+    margin-top: 7px; /* Ajusta el margen superior */
+    margin-bottom: 7px; /* Ajusta el margen inferior */
+    padding: 7px;
+ }
+
+  /* Ajusta el mapa para dispositivos móviles */
+  .mapa {
+    max-height: 600px; /* Ajusta la altura máxima */
+ }
+
+  /* Ajusta los elementos del footer y contacto para dispositivos móviles */
+  .left-message-foother {
+    height: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .social-icons-foother {
+    margin-left: 1px;
+  }
+
+  .social-icons-foother a {
+max-width: 20px;
+margin-left: 4px;
+  }
+ 
+}
+   
